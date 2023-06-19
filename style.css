@@ -1,0 +1,243 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    background-color: black;
+    color: #FFFFFF;
+    font-family: 'Montserrat','Times New Roman', Times, serif, sans-serif;
+}
+main {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+hr {
+    width: 930px;
+    border: 1px solid #FFFFFF;
+    opacity: 0.4; 
+}
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+.personal_info {
+    width: 322px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+.photo {
+    height: 355px;
+    background-image: url(photo.jpg);
+    background-size: cover;
+}
+.photo_glasses {
+    position: absolute;
+    z-index: 1;
+    left: 177px;
+    top: 164px;
+}
+.info {
+    margin-top: -43px;
+    height: 454px;
+    padding: 40px 0px 158px 24px;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #F51B1B;
+    display: flex;
+    flex-direction: column;
+    white-space:normal;
+}
+.name_part {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+.info_part {
+    display: flex;
+    flex-direction: column;
+}
+.info_item {
+    margin-bottom: 20px; 
+}
+svg {
+    margin-right: 14px;
+}
+.info_rec {
+    z-index: 1;
+    margin: -40px 131px 40px;
+    display: flex;
+    align-self: center;
+}
+.personal_represent {
+    padding: 18px 31px;
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    margin: 0;
+    width: 690px;
+    white-space: normal;
+}
+.wrapper {
+    margin-top: 42px;
+    width: 1006px;
+    height: 626px;
+    border: 1px solid #FFFFFF;
+    border-top: 0;
+    position: relative;
+}
+.wrapper:before,
+.wrapper:after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 1px;
+  top: 0;
+}
+.wrapper:before {
+  width: 100px;
+  height: 70px;
+  left: 0px;
+  border-top: 1px solid #FFFFFF;
+  border-radius: 0px 25px;
+}
+.wrapper:after {
+  width: 904px;
+  height: 70px;
+  right: 0;
+  border-top: 1px solid #FFFFFF;
+  border-radius: 25px 0px;
+}
+.personal_exp {
+    padding: 47px;
+}
+.exp_item {
+    display: flex;
+    justify-content: space-between;
+}
+.item_title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
+.content {
+    width: 730px;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+.content_item {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+.content_item span {
+    opacity: 0.4;
+}
+.content_item.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width: 360px) {
+    body {
+        padding: 20px;
+    }
+    header {
+        margin-bottom: 52px;
+    }
+    main {
+        flex-direction: column;
+    }
+    p {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+    }
+    hr {
+        width: 288px;
+    }
+    .logo {
+        justify-content: flex-start;
+    }
+    .photo_glasses {
+        top: 196px;
+        left: 157px;
+    }
+    .info {
+        height: 288px;
+        padding: 24px 0px 0px 16px;
+    }
+    .name_part {
+        margin-bottom: 24px;
+    }
+    .name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .personal_info {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .personal_represent {
+        padding: 40px 0px;
+    }
+    .intro {
+        width: 320px;
+    }
+    .wrapper {
+        width: 320px;
+    }
+    .wrapper:before {
+        width: 159px;
+      }
+      .wrapper:after {
+        width: 159px;
+      }
+    .personal_exp {
+        padding: 40px 15px;
+    }
+    .exp_item {
+        flex-direction: column;
+    }
+    .item_title {
+        margin-bottom: 16px;
+    }
+    .content {
+        width: 288px;
+    }
+
+}
+
